@@ -8,14 +8,18 @@
 
 <ion-content>
   <ion-list>
-    <ion-list-header>
-      Characters
-    </ion-list-header>
-
-    <ion-item *ngFor="let item of items">
-      <ion-label>{{ item }}</ion-label>
-      <ion-checkbox color="secondary"></ion-checkbox>
-    </ion-item>
+    <ion-item-sliding *ngFor="let item of items">
+      <ion-item>
+        <h2>{{ item }}</h2>
+      </ion-item>
+      
+      <ion-item-options side="right">
+        <button ion-button color="danger" (click)="onRemoveRequirement(item)">
+          <ion-icon name="trash"></ion-icon>
+          Remove
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
 
     <br />
 
