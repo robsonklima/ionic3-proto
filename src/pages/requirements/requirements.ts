@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, ToastController } from 'ionic-angular';
 
-import { RequirementAddPage } from './requirement-add';
+import { RequirementEdtPage } from './requirement-edt';
 
 @Component({
   selector: 'page-requirements',
@@ -22,7 +22,7 @@ export class RequirementsPage {
   ) {}
 
   public onLoadAddRequirement() {
-    this.navCtrl.push(RequirementAddPage);
+    this.navCtrl.push(RequirementEdtPage);
   }
 
   public onRemoveRequirement(requirement: any) {

@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { ViewController } from 'ionic-angular';
 
 @Component({
-  selector: 'requirement-add-page',
-  templateUrl: 'requirement-add.html'
+  selector: 'requirement-edt-page',
+  templateUrl: 'requirement-edt.html'
 })
-export class RequirementAddPage {
+export class RequirementEdtPage {
   constructor(
     private viewCtrl: ViewController
   ) {}
