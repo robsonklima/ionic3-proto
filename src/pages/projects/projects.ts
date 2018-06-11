@@ -14,7 +14,7 @@ export class ProjectsPage {
     private navCtrl: NavController
   ) {}
 
-  private onLoadProject() {
+  public onLoadProject() {
     this.navCtrl.push(ProjectPage);
   }
 }

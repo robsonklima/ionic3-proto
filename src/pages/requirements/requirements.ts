@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
+import { RequirementAddPage } from './requirement-add';
+
 @Component({
   selector: 'page-requirements',
   templateUrl: 'requirements.html'
@@ -17,4 +19,8 @@ export class RequirementsPage {
   constructor(
     private navCtrl: NavController
   ) {}
+
+  public onLoadAddRequirement() {
+    this.navCtrl.push(RequirementAddPage);
+  }
 }

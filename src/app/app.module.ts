@@ -8,13 +8,15 @@ import { MyApp } from './app.component';
 import { ProjectsPage } from '../pages/projects/projects';
 import { ProjectPage } from '../pages/projects/project';
 import { RequirementsPage } from '../pages/requirements/requirements';
+import { RequirementAddPage } from '../pages/requirements/requirement-add';
 
 @NgModule({
   declarations: [
     MyApp,
     ProjectsPage,
     ProjectPage,
-    RequirementsPage
+    RequirementsPage,
+    RequirementAddPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import { RequirementsPage } from '../pages/requirements/requirements';
     MyApp,
     ProjectsPage,
     ProjectPage,
-    RequirementsPage
+    RequirementsPage,
+    RequirementAddPage
   ],
   providers: [
     StatusBar,
